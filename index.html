@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+      shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous">
+
+  </head>
+
+  <body>
+    <header>
+      <!-- place navbar here -->
+    </header>
+    <main>
+      <!-- bài tập số 1 -->
+      <h3>Bài tập số 1 tính tiền lương nhân viên</h3>
+      <div class="mb-3">
+        <label class="form-label">Nhập số ngày làm</label>
+        <input class="form-control" id="input-days" />
+      </div>
+      <button class="btn btn-success mt-2" onclick="salary()">tính</button>
+      <div class="bg-warning w-25 p-4 mt-4">
+        <p> Tiền lương của nhân viên: <span id="wage"></span> đồng</p>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <!-- bài tập số 2 -->
+      <h3>Bài tập số 2 tính tiền trung bình của 5 số thực</h3>
+      <div class="mb-3 text-center">
+        <label class="form-label fw-bold fs-2">Nhập 5 số thực </label>
+        <div class="d-flex gap-3">
+          <input class="form-control" id="realnumber1" />
+          <input class="form-control" id="realnumber2" />
+          <input class="form-control" id="realnumber3" />
+          <input class="form-control" id="realnumber4" />
+          <input class="form-control" id="realnumber5" />
+        </div>
+      </div>
+      <button class="btn btn-success mt-2" onclick="average()">Tính</button>
+      <div class="bg-warning w-25 p-4 mt-4">
+        <p> Trung bình của 5 số thực: <span id="result"></span></p>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <!-- bài tập 3 -->
+      <h3>Bài tập số 3 quy đổi USD thành VND</h3>
+      <div class="mb-3 text-center">
+        <label class="form-label fw-bold fs-2">Nhập tiền USD</label>
+        <div class="d-flex gap-3">
+          <input class="form-control" id="input-usd" />
+        </div>
+      </div>
+      <button class="btn btn-success mt-2" onclick="change()">Tính Tiền</button>
+      <div class="bg-warning w-25 p-4 mt-4">
+        <p> Số tiền quy đổi sang Việt Nam đồng: <span id="output-vnd"></span> VND</p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+<!-- bài tập số 4 -->
+      <h3>Bài tập số 4 tính chu vi và diện tích</h3>
+      <div class="mb-3 text-center">
+        <label class="form-label fw-bold fs-2">Nhập thông số của hình chữ nhật </label>
+        <div class="d-flex gap-3">
+          <input class="form-control" id="input-width" />
+          <input class="form-control" id="input-height" />
+        </div>
+      </div>
+      <button class="btn btn-success mt-2" onclick="calculator()">Tính</button>
+      <div class="bg-warning w-25 p-4 mt-4">
+        <p> Chu vi hình chữ nhật: <span id="output-perimeter"></span></p>
+      </div>
+      <div class="bg-warning w-25 p-4 mt-4">
+        <p> Diện tích hình chữ nhật: <span id="output-acreage"></span></p>
+      </div>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- bài tập số 5 -->
+    <h3>Bài tập số 5 tính tổng 2 ký số của  số có 2 chữ số</h3>
+    <div class="mb-3 text-center">
+      <label class="form-label fw-bold fs-2">Nhập số có 2 chữ số  </label>
+      <div class="d-flex gap-3">
+        <input class="form-control" id="input-number2" />
+      </div>
+    </div>
+    <button class="btn btn-success mt-2" onclick="total()">Tính</button>
+    <div class="bg-warning w-25 p-4 mt-4">
+      <p> Tổng của 2 ký số: <span id="output-total"></span></p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous">
+  </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous">
+  </script>
+
+    <script src="./index.js"></script>
+  </body>
+
+</html>
